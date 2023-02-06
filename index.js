@@ -127,7 +127,7 @@ async function get_followers() {
         const follower_avatar = {
           input: `${follower.screen_name}.png`,
           top: parseInt(`${380 + 300 * index}`),
-          left: 3950,
+          left: 0, //3950
         };
         image_data.push(follower_avatar);
         count++;
