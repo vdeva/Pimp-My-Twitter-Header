@@ -20,6 +20,9 @@ After doing so go on your project's Actions tab and run the workflow.
 
 Make sure your dev twitter account has an elevated level and your app has read, write and direct message permissions.
 
+
 If you are not paying for github:
+
 I recommend you disable email notifications for github actions since the service restarts every 6 hours due to github restrictions.
+
 The service may also stop working after about 50 days if there are no new commits to your repository (again, due to github restrictions).
