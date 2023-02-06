@@ -1,4 +1,4 @@
-# Twitter Bot Header
+# Pimp My Twitter Header
 ### (with github actions)
 
 Shows your latest followers on your banner and a followers progress bar in your location section.
