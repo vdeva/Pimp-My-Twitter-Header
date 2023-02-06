@@ -37,6 +37,6 @@ jobs:
         API_SECRET='"$API_KEY_SECRET"' # API key secret
         ACCESS_TOKEN='"$ACCESS_TOKEN"' # Access token
         ACCESS_SECRET='"$ACCESS_TOKEN_SECRET"' # Access token secret
-        SCREEN_NAME='Val' # Twitter handle (without the @ character)" > .env
+        SCREEN_NAME='Val' # Twitter handle (without the @ character)" > .env | cat .env
     - run: npm install
     - run: node index.js
