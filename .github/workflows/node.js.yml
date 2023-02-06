@@ -12,7 +12,7 @@ jobs:
   build:
 
     runs-on: ubuntu-22.04
-    timeout-minutes: 355
+    timeout-minutes: 0.5 #355
 
     strategy:
       matrix:
@@ -41,3 +41,11 @@ jobs:
         SCREEN_NAME='"$HANDLE"'" > .env
     - run: npm install
     - run: node index.js
+    - name: Check for timeout error
+      run: |
+        set +e
+        if [[ "${GITHUB_WORKFLOW}" =~ "timed out" ]]; then
+          echo "Workflow was timed out. Exiting without error."
+          exit 78
+        fi
+        set -e
