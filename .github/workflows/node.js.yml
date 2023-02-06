@@ -35,10 +35,10 @@ jobs:
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         HANDLE: ${{ secrets.HANDLE }}
       run: |
-        echo "API_KEY='"$API_KEY"' # API key
-        API_SECRET='"$API_KEY_SECRET"' # API key secret
-        ACCESS_TOKEN='"$ACCESS_TOKEN"' # Access token
-        ACCESS_SECRET='"$ACCESS_TOKEN_SECRET"' # Access token secret
-        SCREEN_NAME='HANDLE' # Twitter handle (without the @ character)" > .env
+        echo "API_KEY='"$API_KEY"'
+        API_SECRET='"$API_KEY_SECRET"'
+        ACCESS_TOKEN='"$ACCESS_TOKEN"'
+        ACCESS_SECRET='"$ACCESS_TOKEN_SECRET"'
+        SCREEN_NAME='"$HANDLE"'" > .env
     - run: npm install
     - run: node index.js
