@@ -1,5 +1,5 @@
 # Twitter Bot Header
-## (with github actions)
+### (with github actions)
 
 Shows your latest followers on your banner and a followers progress bar in your location section.
 Should lead to increased engagement so if you're some social media freak you'll probably want to use this.
