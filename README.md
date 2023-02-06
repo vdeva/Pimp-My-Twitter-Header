@@ -8,7 +8,7 @@ Likely leads to increased engagement so if you're some social media freak you'll
 Forked from guillaume-rygn.
 It basically does the same thing as his original project except you don't have do bother with hosting.
 
-Simply go in Settings, Secrets and variables, Actions, and add the following secrets:\
+Simply Fork, go in Settings, Secrets and variables, Actions, and add the following secrets:
 
 ACCESS_TOKEN (This is your access token)
 ACCESS_TOKEN_SECRET (This is your access token secret)
