@@ -12,7 +12,7 @@ jobs:
   build:
 
     runs-on: ubuntu-22.04
-    timeout-minutes: 1 #355
+    timeout-minutes: 359
 
     strategy:
       matrix:
