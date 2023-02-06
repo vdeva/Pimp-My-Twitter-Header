@@ -87,7 +87,7 @@ const getFollowersProgress = (followersCount) => {
     Math.floor((followersCount - prev) / ((next - prev) / 5))
   );
   const yellowCube =
-    ((followersCount - prev) / ((next - prev) / 5)) % 1 !== 0 ? ">" : "";
+    ((followersCount - prev) / ((next - prev) / 5)) % 1 !== 0 ? "➤" : "";
   const cubes = (greenCubes + yellowCube).padEnd(10, " ");
 
   return `${abbreviateInt(prev)} ${cubes} ${abbreviateInt(next)} followers`;
