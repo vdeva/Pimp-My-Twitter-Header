@@ -5,7 +5,7 @@ Shows your latest followers on your banner and a followers progress bar in your 
 
 Likely leads to increased engagement so if you're some social media freak you'll probably want to use this.
 
-Forked from guillaume-rygn
+Forked from guillaume-rygn.
 It basically does the same thing as his original project except you don't have do bother with hosting.
 
 Simply go in Settings, Secrets and variables, Actions, and add the following secrets:\
