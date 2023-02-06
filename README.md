@@ -16,5 +16,6 @@ API_KEY (This is your API key)
 API_KEY_SECRET (This is your API key secret)
 HANDLE (For this one put your twitter handle without the @)
 ```
+After doing so go on your project's Actions tab and run the workflow.
 
 Make sure your dev twitter account has an elevated level and your app has read, write and direct message permissions.
