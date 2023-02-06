@@ -1,6 +1,10 @@
 # Pimp My Twitter Header
 ### (with github actions)
 
+Path to action workflow:
+```
+.github/workflows/node.js.yml 
+```
 Shows your latest followers on your banner and a followers progress bar in your location section.
 
 Likely leads to increased engagement so if you're some social media freak you'll probably want to use this.
