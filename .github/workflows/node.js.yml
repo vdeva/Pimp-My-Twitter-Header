@@ -5,14 +5,14 @@ name: Node.js CI
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 0,6,12,18 * * *"
   workflow_dispatch:
 
 jobs:
   build:
 
     runs-on: ubuntu-22.04
-    timeout-minutes: 719
+    timeout-minutes: 1 #355
 
     strategy:
       matrix:
