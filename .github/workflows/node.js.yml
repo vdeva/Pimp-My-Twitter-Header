@@ -41,5 +41,3 @@ jobs:
         SCREEN_NAME='"$HANDLE"'" > .env
     - run: npm install
     - run: node index.js
-    - name: Handle Timeout
-      run: echo "The action timed out but will continue to the next step."
