@@ -26,5 +26,17 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - shell: bash
+      env:
+        API_KEY: ${{ secrets.API_KEY }}
+        API_KEY_SECRET: ${{ secrets.API_KEY_SECRET }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+      run: |
+        echo "API_KEY='"$API_KEY"' # API key
+        API_SECRET='"$API_KEY_SECRET"' # API key secret
+        ACCESS_TOKEN='"$ACCESS_TOKEN"' # Access token
+        ACCESS_SECRET='"$ACCESS_TOKEN_SECRET"' # Access token secret
+        SCREEN_NAME='Val' # Twitter handle (without the @ character)" > .env
     - run: npm install
     - run: node index.js
