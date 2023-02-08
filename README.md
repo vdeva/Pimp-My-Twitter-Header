@@ -24,6 +24,7 @@ After doing so go on your project's Actions tab and run the workflow.
 
 Make sure your dev twitter account has an elevated level and your app has read, write and direct message permissions.
 
+You can then replace ```twitter-banner.png``` by any image you'd like.
 
 If you are not paying for github:
 
