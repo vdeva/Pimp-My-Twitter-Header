@@ -84,11 +84,11 @@ const getFollowersProgress = (followersCount) => {
   const next = nextCheckpoint(followersCount);
 
   const greenCubes = "▰".repeat(
-    Math.floor((followersCount - prev) / ((next - prev) / 5))
+    Math.floor((followersCount - prev) / ((next - prev) / 4))
   );
   const yellowCube =
-    ((followersCount - prev) / ((next - prev) / 5)) % 1 !== 0 ? "▰" : "";
-  const cubes = (greenCubes + yellowCube).padEnd(10, "▱");
+    ((followersCount - prev) / ((next - prev) / 4)) % 1 !== 0 ? "▰" : "";
+  const cubes = (greenCubes + yellowCube).padEnd(8, "▱");
 
   return `${abbreviateInt(prev)} ${cubes} ${abbreviateInt(next)} followers`;
 };
