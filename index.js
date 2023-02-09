@@ -90,7 +90,7 @@ const getFollowersProgress = (followersCount) => {
     ((followersCount - prev) / ((next - prev) / 4)) % 1 !== 0 ? "▰" : "";
   const cubes = (greenCubes + yellowCube).padEnd(8, "▱");
 
-  return `${abbreviateInt(prev)} ${cubes} ${abbreviateInt(next)} followers`;
+  return `${abbreviateInt(prev)} ${cubes} ${abbreviateInt(next)}`;
 };
 
 async function get_followers() {
